@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: start;
   gap: 100px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .details .cta {
@@ -43,7 +43,7 @@
 .cta p {
   font-size: 22px;
   font-family: "Work Sans", sans-serif;
-  width: 85%;
+  max-width: 567px;
   line-height: 30px;
 }
 
@@ -74,9 +74,19 @@
   color: white;
 }
 
+#apply:hover {
+  background: transparent;
+  color: #303030;
+}
+
 .btn #learn {
   background: transparent;
   color: #303030;
+}
+
+#learn:hover {
+  background-color: #303030;
+  color: white;
 }
 
 .det .text p {
@@ -94,4 +104,33 @@
 
 .hero .image {
   flex: 35%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .hero .image {
+    display: none;
+  }
+
+  .cta h3 {
+    font-size: 44px;
+  }
+
+  .cta p {
+    font-size: 16px;
+  }
+
+  .hero .details {
+    padding-top: 10px;
+    gap: 60px;
+  }
+
+  .det .btn button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
 }
