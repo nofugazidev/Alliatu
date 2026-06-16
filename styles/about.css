@@ -1,0 +1,42 @@
+.about {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about header p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.about header h3 {
+  font-size: 64px;
+  font-weight: normal;
+  width: 30%;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+}
+
+.about header h3 span {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.about main {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+}
