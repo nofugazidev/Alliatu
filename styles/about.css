@@ -36,13 +36,46 @@
 .about main {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 80px;
   align-items: center;
   justify-content: center;
 }
 
 main .about-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about .about-detail header p {
+  padding: 50px;
+  text-transform: none;
+  width: 680px;
+  line-height: 1.5;
+}
+
+.about-detail .boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.boxes .box {
+  padding: 50px;
+  background: #f7f7f7;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #303030;
+  font-family: "Work Sans", sans-serif;
+}
+
+.boxes .box p {
+    text-transform: uppercase;
+}
+
+.boxes .box small {
+    width: 73%;
+    line-height: 1.5;
 }
