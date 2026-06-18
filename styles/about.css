@@ -2,7 +2,7 @@
   padding: 50px 0px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 100px;
 }
 
 .about header {
@@ -72,10 +72,66 @@ main .about-detail {
 }
 
 .boxes .box p {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .boxes .box small {
-    width: 73%;
+  width: 73%;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about {
+    gap: 20px;
+  }
+
+  .about header {
+    gap: 18px;
+  }
+
+  .about header h3 {
+    font-size: 30px;
+    width: 80%;
+  }
+
+  .about main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .about main img {
+    width: 100%;
+  }
+
+  main .about-detail {
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about .about-detail header p {
+    /* text-align: justify; */
     line-height: 1.5;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .boxes .box {
+    padding: 20px;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .boxes .box p {
+    font-size: 14px;
+  }
+
+  .boxes .box small {
+    width: 90%;
+    line-height: 1.5;
+  }
 }
