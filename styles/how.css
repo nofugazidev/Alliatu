@@ -118,5 +118,42 @@ main .bottom .right .how-boxes {
 }
 
 .right .bottom-box small {
-    line-height: 30px;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .how {
+    gap: 20px;
+  }
+
+  .how > header h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .how main .top .how-boxes,
+  main .bottom .right .how-boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .top .how-boxes .how-box {
+    gap: 10px;
+    padding: 40px;
+    width: 100%;
+  }
+
+  .how main .bottom {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .bottom .right .how-boxes .how-box {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .bottom img {
+    width: 100%;
+  }
 }
