@@ -58,13 +58,13 @@
   border: none;
 }
 
-.cards #card-one .main  .pills p {
-    background: white;
+.cards #card-one .main .pills p {
+  background: white;
 }
 
 .card #card-two {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .card .header {
@@ -98,4 +98,36 @@
 
 .cards .card .main .image img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .people {
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .people header {
+    gap: 10px;
+  }
+
+  .people header h3 {
+    font-size: 30px;
+    width: 60%;
+  }
+
+  .people main .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .people main .cards .card {
+    padding: 50px 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card .header {
+    font-size: 30px;
+  }
 }
