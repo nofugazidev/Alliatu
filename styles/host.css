@@ -1,0 +1,74 @@
+.hosts {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.hosts header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hosts header p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hosts header h3 {
+  font-size: 64px;
+  font-weight: normal;
+  width: 35%;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+}
+
+.hosts header h3 span {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.hosts main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hosts main .host-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 310px;
+  height: 480px;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.host-card img {
+  height: 310px;
+  width: 310px;
+}
+
+main .host-card h4 {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
+
+main .host-card p {
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+main .host-card small {
+  font-family: "Work Sans", sans-serif;
+}
+
+
