@@ -71,4 +71,34 @@ main .host-card small {
   font-family: "Work Sans", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .hosts {
+    gap: 40px;
+    padding-top: 30px;
+  }
 
+  .hosts header {
+    gap: 10px;
+  }
+
+  .hosts header h3 {
+    font-size: 30px;
+    width: 60%;
+  }
+
+  .hosts main {
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+
+    &::-webkit-scrollbar {
+      scrollbar-width: none;
+    }
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hosts main .host-card {
+    flex: 0 0 45%;
+  }
+}
