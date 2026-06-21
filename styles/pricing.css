@@ -2,6 +2,8 @@
   padding-top: 60px;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
   gap: 80px;
 }
 
@@ -35,7 +37,6 @@
 .pricing main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: 40px;
 }
 
@@ -76,9 +77,6 @@ main .pricing-card {
   font-size: 40px;
 }
 
-#middle {
-  background: #ffdd81;
-}
 
 .pricing-card .header p span {
   font-weight: 800;
@@ -98,4 +96,57 @@ main .pricing-card {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
   cursor: pointer;
+}
+
+.pricing #middle {
+    background: #ffdd81;
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    gap: 40px;
+    padding-top: 30px;
+  }
+
+  .pricing header {
+    gap: 10px;
+  }
+
+  .pricing header h3 {
+    font-size: 30px;
+  }
+
+  .pricing main {
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+
+    &::-webkit-scrollbar {
+      scrollbar-width: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  main .pricing-card {
+    padding: 30px 39px;
+    gap: 40px;
+    cursor: pointer;
+    flex: 0 0 80%;
+  }
+
+  .pricing-card .header h4 {
+    font-size: 30px;
+  }
+
+  .pricing-card .header p {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+  }
+
+  .pricing-card button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
 }
