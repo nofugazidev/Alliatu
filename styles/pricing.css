@@ -1,0 +1,101 @@
+.pricing {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.pricing header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing header p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.pricing header h3 {
+  font-size: 64px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+}
+
+.pricing header h3 span {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.pricing main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+main .pricing-card {
+  background: #f7f7f7;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 59px;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.pricing-card .header,
+.pricing-card .list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing-card .header h4 {
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+}
+
+.pricing-card .header small {
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.pricing-card .header p {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+}
+
+#middle {
+  background: #ffdd81;
+}
+
+.pricing-card .header p span {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.pricing-card .list p {
+  font-family: "Work Sans", sans-serif;
+}
+
+.pricing-card button {
+  background: #303030;
+  color: white;
+  padding: 19px 40px;
+  border: none;
+  border-radius: 12px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
