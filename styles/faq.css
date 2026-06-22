@@ -1,0 +1,8 @@
+.faq-box .answer {
+  display: none;
+}
+
+.faq-box .answer.is-open {
+    display: block;
+}
+

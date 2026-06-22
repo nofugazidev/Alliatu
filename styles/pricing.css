@@ -53,6 +53,7 @@ main .pricing-card {
   padding: 50px 59px;
   gap: 50px;
   cursor: pointer;
+  height: 500px;
 }
 
 .pricing-card .header,
@@ -138,6 +139,8 @@ main .pricing-card {
     gap: 40px;
     cursor: pointer;
     flex: 0 0 80%;
+  justify-content: space-between;
+    
   }
 
   .pricing-card .header h4 {
