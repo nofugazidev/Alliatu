@@ -12,19 +12,20 @@
 }
 
 .faq main {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 40px;
 }
 
-main .faq-left, main .faq-right {
-    flex: .5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 640px;
-    gap: 20px;
+main .faq-left,
+main .faq-right {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 640px;
+  gap: 20px;
 }
 
 .faq-left .title {
@@ -39,34 +40,35 @@ main .faq-left, main .faq-right {
   font-style: italic;
 }
 
-.faq-left .faq-box, .faq-right .faq-box {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    background: #f7f7f7;
-    padding: 40px 50px;
-    border-radius: 24px;
+.faq-left .faq-box,
+.faq-right .faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background: #f7f7f7;
+  padding: 40px 50px;
+  border-radius: 24px;
   font-family: "Work Sans", sans-serif;
-
 }
 
-.faq-left .faq-box .header, .faq-right .faq-box .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.faq-left .faq-box .header,
+.faq-right .faq-box .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .faq-box .header .question {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .faq-box .header .icon {
-    border: 1px solid black;
-    padding: 2px 5px;
-    border-radius: 8px;
-    cursor: pointer;
+  border: 1px solid black;
+  padding: 2px 5px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .faq-box .answer {
@@ -75,4 +77,46 @@ main .faq-left, main .faq-right {
 
 .faq-box .answer.is-open {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    gap: 10px;
+    padding-top: 40px;
+  }
+
+  .faq-left .title {
+    font-size: 34px;
+  }
+
+  .faq main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  main .faq-left,
+  main .faq-right {
+    flex: 1;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .faq-left .faq-box,
+  .faq-right .faq-box {
+    width: 100%;
+    background: #f7f7f7;
+    padding: 20px 30px;
+    border-radius: 12px;
+  }
+
+  main .faq-right .image {
+    display: none;
+  }
+
+  .faq-box .header .question {
+    font-size: 12px;
+  }
 }
